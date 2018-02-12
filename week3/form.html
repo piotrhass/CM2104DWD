@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- enter title, meta, css link here-->
+  <script>
+    function testResults(form){
+      //simple script to pop-up
+      //grab form element values and store as variables
+      var username = form.username.value;
+      //repeat above for all the form elements used
+
+      //complete alert message popup by appending variables
+      alert("You registered: "+username +", ");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>MoggyBook!</h1>
+    <!--complete the form-->
+
+    <form>
+      <table border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td>Username:</td>
+          <td>
+            <input type="textarea" name="username">
+          </td>
+        </tr>
+      <!--use table row <tr> template beneath for other form elements-->
+      <tr>
+        <td> ***element label *** </td>
+        <td> ***element input *** </td>
+      </tr>
+    </table>
+    <input type="submit" name="submit" value="submit" onClick="testResults(this.form)"/>
+  </form>
+</body>
+</html>
